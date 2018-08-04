@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Website Kelompok Studi Linux Universitas Atma Jaya Yogyakarta"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style.css"/>
+		<script type="text/javascript" src="script.js"></script>
+		<title>KSL UAJY</title>
+	</head>
+	<body>
+		<nav>
+			<button type="button" onclick="home()">Home</button>
+			<button type="button" onclick="openURL('https://github.com/')">Git Hub</button>
+			<button type="button">Upcoming Events</button>
+			<button type="button" onclick="showSection('aboutUs')">About Us</button>
+			<button type="button">Contact Us</button>
+		</nav>
+		<section id="aboutUs" class="hide">
+			<h1>About Us</h1>
+			<div class="navigasiKonten">
+				<h6 style="font-size: 20px;">Navigations: </h6>
+				<ol>
+					<li>
+						<a href="#deskripsiSingkat">Deskripsi Singkat</a>
+					</li>
+					<li>
+						<a href="#sejarahOrganisasi">Sejarah Organisasi</a>
+					</li>
+					<li>
+						<a href="#strukturOrganisasi">Struktur Organisasi</a>
+					</li>
+				</ol>
+			</div>
+			<div id="deskripsiSingkat">
+				<h2>Deskripsi Singkat</h2>
+				<p>
+					<span style="display:inline-block; width:50px;"></span>Kelompok Studi Linux adalah kelompok studi yang diperuntukan bagi
+					mahasiswa Fakultas Teknologi Industri UAJY. Kelompok studi ini mempelajari
+					tentang linux, terutama bagaimana menjadikan linux sebagai sistem operasi
+					yang dapat digunakan sehari-hari.
+				</p>
+				<p>
+					<span style="display:inline-block; width:50px;"></span>Selain itu, kelompok studi ini juga mempelajari tentang cyber security
+					dan pemrograman dengan environment linux.
+				</p>
+			</div>
+			<br/>
+			<div id="sejarahOrganisasi">
+				<h2>Sejarah Organisasi</h2>
+				<p>Luweh aku we rangerti.</p>
+			</div>
+			<br/>
+			<div id="strukturOrganisasi">
+				<h2>Struktur Organisasi</h2>
+				<br/>
+				<img class="bagan" src="bagan.png" alt="Bagan KSL"  usemap="#lokasiBagan"/>
+				<map name="lokasiBagan">
+					<area shape="circle" coords="198,0,145,0" alt="Agam" title="KETUWA GOBLOK"/>
+					<area shape="circle" coords="559,0,178,0" title="Wakil Ganteng"/>
+					<area shape="circle" coords="240,0,464,0" title="PH1"/>
+					<area shape="circle" coords="407,0,463,0" title="PH2"/>
+					<area shape="circle" coords="547,0,483,0" title="PH3"/>
+				</map>
+			</div>
+		</section>
+		<footer>
+			<p>Kelompok Studi Linux UAJY © 2018</p>
+		</footer>
+	</body>
+</html>-

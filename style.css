@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(0, 0, 152);
+	background-image: url('proxy.duckduckgo.com.png');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+nav button{
+	background-color: rgb(255, 132, 10);
+	border: none;
+	color: white;
+	font-weight: bold;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	float: left;
+	position: -webkit-sticky; /*Untuk Safari >= 6.1*/
+	position: sticky;
+}
+
+nav button:hover{
+	background-color: rgb(255, 160, 66);
+}
+
+section{
+	background-color: rgba(255, 160, 66,1);
+	color: white;
+	padding-bottom: 30px;
+}
+
+section > h1{
+	padding: 10px;
+	text-align: center;
+	background-color: red;
+}
+
+.hide{
+	clear:both;
+	opacity: 0;
+	transition: opacity 1s linear;
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+}
+
+.show{
+	clear:both;
+	opacity: 1;
+	transition: opacity 1s linear;
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+}
+
+.bagan{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	widows: 150px;
+	background-color: #ddd;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.navigasiKonten{
+	background-color: rgb(255, 132, 10);
+	padding: 10px;
+	margin: 10px;
+	width: 15%;
+	height: auto;
+	overflow: auto;
+	border-left: 3px solid red;
+}
+
+footer{
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
