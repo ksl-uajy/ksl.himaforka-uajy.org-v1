@@ -4,20 +4,61 @@
 		<meta charset="UTF-8"/>
 		<meta name="description" content="Website Kelompok Studi Linux Universitas Atma Jaya Yogyakarta"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" href="style.css"/>
 		<script type="text/javascript" src="script.js"></script>
+		 <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+		<link rel="stylesheet" href="style.css"/>
 		<title>KSL UAJY</title>
 	</head>
 	<body>
-		<nav>
-			<button type="button" onclick="home()">Home</button>
-			<button type="button" onclick="openURL('https://github.com/')">Git Hub</button>
-			<button type="button">Upcoming Events</button>
-			<button type="button" onclick="showSection('aboutUs')">About Us</button>
-			<button type="button">Contact Us</button>
+		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="index.html">Home</a>
+
+			<!-- Links -->
+			<ul class="navbar-nav nav" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="">Upcoming Events</a>
+				</li>
+				<li class="navbar-nav">
+					<a class="nav-link" href="https://github.com/KSLinuxUAJY/" target="_blank">Git Hub</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="">Dokumentasi</a>
+					</li>
+				<li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">About Us</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" data-toggle="tab" href="#profil">Profil</a>
+							<a class="dropdown-item" href="">Sejarah</a>
+							<a class="dropdown-item" href="">Struktur</a>
+						</div>
+					</li>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="">Contact Us</a>
+				</li>
+			</ul>
 		</nav>
-		<section id="aboutUs" class="hide">
-			<h1>About Us</h1>
+		<article class="tab-content">
+			<div class="tab-pane container active">
+			</br></br></br></br></br></br></br></br></br></br></br></br>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br>
+			</div>
+			<div class="tab-pane container fade" style="background-color: orange;" id="profil">
+				<h1>About Us</h1>
 			<div class="navigasiKonten">
 				<h6 style="font-size: 20px;">Navigations: </h6>
 				<ol>
@@ -54,7 +95,7 @@
 			<div id="strukturOrganisasi">
 				<h2>Struktur Organisasi</h2>
 				<br/>
-				<img class="bagan" src="bagan.png" alt="Bagan KSL"  usemap="#lokasiBagan"/>
+				<img class="bagan mx-auto d-block img-fluid" src="bagan.png" alt="Bagan KSL"  usemap="#lokasiBagan"/>
 				<map name="lokasiBagan">
 					<area shape="circle" coords="198,0,145,0" alt="Agam" title="KETUWA GOBLOK"/>
 					<area shape="circle" coords="559,0,178,0" title="Wakil Ganteng"/>
@@ -63,9 +104,10 @@
 					<area shape="circle" coords="547,0,483,0" title="PH3"/>
 				</map>
 			</div>
-		</section>
+			</div>
+		</article>
 		<footer>
 			<p>Kelompok Studi Linux UAJY © 2018</p>
 		</footer>
 	</body>
-</html>-
+</html>

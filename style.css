@@ -3,7 +3,6 @@
 }
 
 body{
-	background-color: rgb(0, 0, 152);
 	background-image: url('proxy.duckduckgo.com.png');
 	background-position: center;
 	background-attachment: fixed;
@@ -15,54 +14,22 @@ img{
 	height: auto;
 }
 
-nav button{
+nav{
 	background-color: rgb(255, 132, 10);
-	border: none;
 	color: white;
+	border: none;
 	font-weight: bold;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
 	cursor: pointer;
-	float: left;
 	position: -webkit-sticky; /*Untuk Safari >= 6.1*/
 	position: sticky;
 }
 
-nav button:hover{
+nav li:hover{
 	background-color: rgb(255, 160, 66);
-}
-
-section{
-	background-color: rgba(255, 160, 66,1);
-	color: white;
-	padding-bottom: 30px;
-}
-
-section > h1{
-	padding: 10px;
-	text-align: center;
-	background-color: red;
-}
-
-.hide{
-	clear:both;
-	opacity: 0;
-	transition: opacity 1s linear;
-	-webkit-transition: opacity 1s linear;
-	-moz-transition: opacity 1s linear;
-	-o-transition: opacity 1s linear;
-}
-
-.show{
-	clear:both;
-	opacity: 1;
-	transition: opacity 1s linear;
-	-webkit-transition: opacity 1s linear;
-	-moz-transition: opacity 1s linear;
-	-o-transition: opacity 1s linear;
 }
 
 .bagan{
@@ -88,7 +55,7 @@ section > h1{
 }
 
 footer{
-	color: white;
+	color: black;
 	font-weight: bold;
 	font-size: 15px;
 	text-align: center;
