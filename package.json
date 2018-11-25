@@ -1,0 +1,15 @@
+{
+  "name": "kslinux-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:KSLinuxUAJY/website.git",
+  "author": "Vriyas Hartama <vriyashartama@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "scripts": {
+    "serve": "browser-sync start --server --files"
+  }
+}
